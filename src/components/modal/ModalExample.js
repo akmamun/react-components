@@ -5,7 +5,7 @@ export default function ModalExample() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div style={{ textAlign: "center", margin: 100 }}>
       <button onClick={() => setIsOpen(true)}>Click Modal!</button>
       <Modal show={isOpen} closeModal={() => setIsOpen(false)}>
         <h4> here is hook modal data </h4>
